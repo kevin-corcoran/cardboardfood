@@ -2,8 +2,8 @@
 
 I'm working on my own Personal [MVP](https://github.com/webbhm/OpenAg-MVP-II).
 
-Most of this code is from that project, however I have changed somethings and used only what I needed.
+Most of this code is from that project.
 
-This enclosure is made out of cardboard.
+Also, this enclosure is made out of cardboard.
 
 
