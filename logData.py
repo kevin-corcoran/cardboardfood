@@ -58,8 +58,8 @@ class logData():
         with open("data.txt","w") as outfile:
             json.dump(self.data,outfile)
             
-##if __name__=="__main__":
-log = logData()
-log.logData()
+if __name__=="__main__":
+    log = logData()
+    log.logData()
+    send_message(notify,'data logged')
 # This gets logged to a txt file, and I dont think we need notifications
-send_message('notifications','data logged')
