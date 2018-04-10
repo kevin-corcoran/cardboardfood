@@ -1,10 +1,10 @@
 from slackclient import SlackClient
-import inspect
 
-# print(inspect.getsource(SlackClient))
 # token obtained from
 # https://api.slack.com/custom-integrations/legacy-tokens
-slack_token = 'xoxp-343020524115-344171801959-343022370963-c812c37533089abdb48d6230953b332a'
+slack_token = '<obtained from link in comment above>'
+kevin = 'DA2CGFVBJ' # I dont know how to find this with code
+notify = 'notifications' # channel for notifications
 
 slack_client = SlackClient(slack_token)
 
@@ -34,14 +34,12 @@ def send_message(channel_id, message):
         username='Cardboard Box', 
 )
 
-kevin = 'DA2CGFVBJ' # I dont know how to find this with code
-
 def print_channels():
     channels = list_channels() 
     for channel in channels: 
         print('Channel: {} ({}), Members: {}, Creator: {}'.format(channel['name'], channel['id'], channel['members'], channel['creator']))
 
-# send_message('notifications','testing')
+send_message(notify,'testing')
 
 # channels = channels_call['channels']
 # members = channels[0]['members'] # a list
